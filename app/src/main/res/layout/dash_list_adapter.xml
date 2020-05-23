@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:padding="5dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_serial_no"
+            android:text="1."
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_weight="1"
+            android:textSize="15dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_heading"
+            android:text="books"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_weight="1"
+            android:textSize="15dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_date"
+            android:text="1."
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_weight="1"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+</layout>

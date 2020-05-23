@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "400755355239",
+    "firebase_url": "https://donatebooks-3e172.firebaseio.com",
+    "project_id": "donatebooks-3e172",
+    "storage_bucket": "donatebooks-3e172.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400755355239:android:170dfe34030b324ef32ec2",
+        "android_client_info": {
+          "package_name": "com.example.donatebooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400755355239-fp0vkcu8rgg17scgfsgl8s7iniqth758.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIQ4MsewzuLeFZVY3WksS7Gc5ESRhgRs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400755355239-fp0vkcu8rgg17scgfsgl8s7iniqth758.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DonateBooks</string>
+    <string name="headline">Donate books and help needy..</string>
+    <string name="semi_headline"> one book can teach many . </string>
+    <string name="fab_desc"> How can i help? . </string>
+    <string name="dialog_desc"> If you want to organize any event for needy.You can call us. </string>
+</resources>
