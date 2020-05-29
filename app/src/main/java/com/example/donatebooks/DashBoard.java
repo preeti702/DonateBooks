@@ -37,6 +37,13 @@ private List<ImageList> list ;
                 startActivity(new Intent(DashBoard.this,GetUserDetails.class));
             }
         });
+
+        binding.btnDonateStationary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this,GetUserDetails.class));
+            }
+        });
         binding.dashOpenDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

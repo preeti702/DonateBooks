@@ -27,13 +27,13 @@ import java.util.concurrent.TimeUnit;
 
 public class PhoneNumber extends AppCompatActivity implements View.OnClickListener {
     private ActivityPhoneNumberBinding binding;
-   private DatabaseReference  dbRef;
+  // private DatabaseReference  dbRef;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dbRef = FirebaseDatabase.getInstance().getReference();
+        //dbRef = FirebaseDatabase.getInstance().getReference();
         binding = DataBindingUtil.setContentView(this,R.layout.activity_phone_number);
         binding.btnGenOtp.setOnClickListener(this);
 
@@ -44,7 +44,7 @@ public class PhoneNumber extends AppCompatActivity implements View.OnClickListen
         if (TextUtils.isEmpty(num)){
             Toast.makeText(PhoneNumber.this,"this field can't be empty",Toast.LENGTH_SHORT).show();
         }else{
-            WriteNewUser(num);
+           // WriteNewUser(num);
             startActivity(new Intent(PhoneNumber.this, OtpVerification.class).putExtra("phoneNum",num));
         }
     }
@@ -56,9 +56,9 @@ public class PhoneNumber extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    private void WriteNewUser(String number){
+   /* private void WriteNewUser(String number){
         SaveUserNumber user = new SaveUserNumber(number);
         String userId = FirebaseAuth.getInstance().getUid();
         dbRef.child("users").child(userId).setValue(user);
-    }
+    }*/
 }

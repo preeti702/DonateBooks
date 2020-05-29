@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".DashBoard"
+        android:background="@drawable/bg"
         android:orientation="vertical">
         <!--<include layout="@layout/toolbar"
             android:id="@+id/toolbar"/>-->
@@ -18,11 +19,25 @@
             android:paddingTop="10dp"
             android:id="@+id/dash_open_dialog"
             android:src="@drawable/ic_dehaze"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dash_open_dialog">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="100dp">
+            android:paddingTop="70dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/main_logo"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,52 +55,31 @@
                 android:textSize="13dp"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp">
-            <androidx.cardview.widget.CardView
+
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="300dp"
+                android:layout_height="200dp"
                 android:layout_weight="1"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="@color/LightPink"
-                android:background="@drawable/edit_box">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/btn_donate_books"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Donate Books"
-                    android:textSize="15dp"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/open_sans_regular"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="7dp"
+                android:id="@+id/btn_donate_books"
+                android:background="@drawable/ic_dbooks"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="300dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="@color/Orange"
-                android:layout_weight="1">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="NGO"
-                    android:textSize="15dp"
-                    android:id="@+id/btn_ngo"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/open_sans_regular"/>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:id="@+id/btn_donate_stationary"
+                android:background="@drawable/ic_dstat"/>
+
+
         </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                      android:paddingStart="25dp"
-                    android:text="For pickup and deliver books"
+                    android:text="Make them write their destiny"
                     android:textColor="@color/colorPrimary"
                     android:layout_weight="1"
                     android:fontFamily="@font/caviar_dreams"
@@ -178,7 +172,8 @@
 
         </LinearLayout>
 
-
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
 
     </RelativeLayout>

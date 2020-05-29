@@ -7,7 +7,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".GetUserDetails"
+        android:background="@drawable/bg_bubble"
         android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -176,6 +184,8 @@
             android:id="@+id/btn_profile_done"
             android:fontFamily="@font/open_sans_regular"
             android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 
